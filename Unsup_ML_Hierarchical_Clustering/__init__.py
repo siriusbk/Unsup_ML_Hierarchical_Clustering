@@ -2,11 +2,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.cluster import MeanShift
 from sklearn.datasets.samples_generator import make_blobs
-from mpl_toolkits.mplot3d import axes3d
+from mpl_toolkits.mplot3d import Axes3D
 
 centers = [[1,1,1],[5,5,5],[3,10,10]]
 
-X, _ = make_blobs(n_samples=500, cluster_std=1.5)
+X, _ = make_blobs(n_samples=100, cluster_std=1.5)
 ms = MeanShift()
 ms.fit(X)
 
