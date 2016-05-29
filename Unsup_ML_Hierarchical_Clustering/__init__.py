@@ -9,7 +9,7 @@ ax = fig.add_subplot(111, projection='3d')
 
 centers = [[1,1,1],[5,5,5],[3,10,10]]
 
-X, _ = make_blobs(n_samples=100, centers=centers, cluster_std=1.5)
+X, _ = make_blobs(n_samples=500, centers=centers, cluster_std=1.5)
 ms = MeanShift()
 ms.fit(X)
 
