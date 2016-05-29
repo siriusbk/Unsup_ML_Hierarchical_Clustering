@@ -28,7 +28,6 @@ print(labels)
 
 
 for i in range(len(X)):
-
     ax.scatter(X[i][0], X[i][1], X[i][2], c=colors[labels[i]], marker='o')
 
 ax.scatter(cluster_centers[:, 0], cluster_centers[:, 1], cluster_centers[:, 2], marker="x", color='k', s=150, linewidths=5, zorder=10)
